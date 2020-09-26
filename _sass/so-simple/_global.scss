@@ -358,12 +358,15 @@ details {
     border: 1px solid #aaa;
     border-radius: 4px;
     padding: .5em .5em 0;
+    background-color: whitesmoke;
 }
 
 summary {
     font-weight: bold;
     margin: -.5em -.5em 0;
     padding: .5em;
+    background-color: darkslategray;
+    color: white;
 }
 
 details[open] {

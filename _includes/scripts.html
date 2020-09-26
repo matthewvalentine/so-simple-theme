@@ -29,6 +29,13 @@
 {% if site.mathjax == true or site.mathjax.enable == true %}
 <!-- MathJax -->
 {% capture mathjaxjs %}https://cdn.jsdelivr.net/npm/mathjax@3/es5/{{ site.mathjax.combo | default: "tex-svg" }}.js{% endcapture %}
+<script type="text/javascript">
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
 <script type="text/javascript" id="MathJax-script" async src="{{ mathjaxjs }}"></script>
 {% endif %}
 
